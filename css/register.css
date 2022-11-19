@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --text: #dee0f5;
+  --accent: #0287fc;
+  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+html::-webkit-scrollbar{
+  background: transparent;
+  width: 6px;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--accent);
+  border-radius: 9px;
+}
+body {
+  background-color: #1c1d22;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 2%;
+}
+
+form {
+  width: 100%;
+  background: hsl(0 100% 100% / 0.1);
+  border-radius: 8px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form h2 {
+  color: var(--accent);
+  font: 600 2.3rem var(--font-default);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-bottom: 1rem;
+}
+.input-wrapper label {
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.input-wrapper input {
+  padding: 8px;
+  border-radius: 4px;
+  background: none;
+  accent-color: #ffffff;
+  border: 1px solid hsl(0 100% 100% / 0.2);
+  font: 400 1rem var(--font-default);
+  outline: none;
+  color: #ffffff;
+}
+.input-wrapper input[type="text"]:hover,
+.input-wrapper input[type="password"]:hover,
+.input-wrapper input[type="text"]:focus,
+.input-wrapper input[type="password"]:focus {
+  outline: 2px solid hsl(0 100% 100% / 0.7);
+  outline-offset: 3px;
+}
+.input-wrapper .radio{
+  display: flex;
+}
+.radio input{
+  accent-color: var(--accent);
+}
+.radio label{
+  margin: 0 1rem 0 5px;
+}
+
+form #signup {
+  background-color: hsl(0 100% 100% / 0.2);
+  border: 1px solid hsl(0 100% 100% / 0.3);
+  font: 500 1.2rem var(--font-default);
+  letter-spacing: 1px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: var(--text);
+}
+
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 450px;
+  }
+}

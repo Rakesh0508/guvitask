@@ -1,0 +1,21 @@
+/* class="py-3 md:px-5 d-flex flex-column" style="min-height: 100vh;" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 3% 2%;
+  display: flex;
+  background: #15161e;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 4% 7%;
+  }
+}
